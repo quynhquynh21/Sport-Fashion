@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-size: 13pt;
   font-family: Arial, Helvetica, sans-serifq;
-  cursor:default ;
+  user-select: none;
 }
 a {
   text-decoration: none;
@@ -215,14 +215,69 @@ header {
 }
 .img_content{
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	justify-content: space-between;
+  flex-wrap: wrap;
 }
 .img_name{
 	font-weight: 600;
-	color: #555555;
+  color: #555555;
+  cursor:default ;
+ 
 }
 .img_price{
 	margin-top: 10px;
-	color: red;
+  color: red;
+  cursor:default ;
+}
+
+.application_text{
+  color: #55555f;
+ font-weight: 900;
+ text-align: center;
+ margin-top: 100px;
+}
+.application_describe{
+  color: #77777f;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.application_link{
+display: flex;
+justify-content: space-between;
+}
+.application_img{
+  width: 350px;
+}
+.information{
+  background-color: #efefef;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.information_img{
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+footer{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_text{
+  color: #000;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.license{
+  margin-top: 100px;
+  text-align: center;
+  background-color: #a9a9a6;
+  padding: 30px;
+  color: lightgray;
+  font-size: 1.2rem;
 }
